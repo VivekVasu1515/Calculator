@@ -2,22 +2,22 @@ import java.util.Scanner;
 
 public class Calculator {
     public static double addition(double num1, double num2){
-        double sum = num1+num2;
-        return sum;
+        
+        return num1+num2;
     }
     public static double subtraction(double num1, double num2){
-        double sub = num1-num2;
-        return sub;
+        
+        return num1-num2;
     }
 
     public static double multiplication(double num1, double num2){
-        double product = num1*num2;
-        return product;
+        
+        return num1*num2;
     }
 
     public static double division(double num1, double num2){
-        double div = (double)num1/num2;
-        return div;
+        
+        return (double)num1/num2;
     }
     
     
