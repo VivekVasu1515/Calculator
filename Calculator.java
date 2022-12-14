@@ -1,33 +1,33 @@
 import java.util.Scanner;
 
 public class Calculator {
-    public static void addition(int num1, int num2){
-        int sum = num1+num2;
-        System.out.println(sum);
+    public static double addition(double num1, double num2){
+        double sum = num1+num2;
+        return sum;
     }
-    public static void subtraction(int num1, int num2){
-        int sub = num1-num2;
-        System.out.println(sub);
-    }
-
-    public static void multiplication(int num1, int num2){
-        int product = num1*num2;
-        System.out.println(product);
+    public static double subtraction(double num1, double num2){
+        double sub = num1-num2;
+        return sub;
     }
 
-    public static void division(int num1, int num2){
-        float div = (float)num1/num2;
-        System.out.println(div);
+    public static double multiplication(double num1, double num2){
+        double product = num1*num2;
+        return product;
+    }
+
+    public static double division(double num1, double num2){
+        double div = (double)num1/num2;
+        return div;
     }
     
     
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the 1st Number : ");
-        int num1 = sc.nextInt();
+        double num1 = sc.nextDouble();
         System.out.println("Enter the 2st Number : ");
-        int num2 = sc.nextInt();
-        division(num1, num2);
+        double num2 = sc.nextDouble();
+        System.out.println(division(num1, num2));
         
         sc.close();
     }
